@@ -1,0 +1,36 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Distribuir elementos a los extremos */
+    align-items: center; /* Alinear elementos verticalmente al centro */
+    color: black;
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .menu-options {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-options li {
+    margin: 0 20px;
+  }
+  
+  .menu-options li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+  }
+  
+  .navegador input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .menu-container img{
+    width: 200px;
+    height: 53px;
+  }
