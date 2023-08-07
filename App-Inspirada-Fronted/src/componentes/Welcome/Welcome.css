@@ -1,0 +1,29 @@
+.text-component {
+    text-align: left;
+    
+  }
+  
+  .text-component p {
+    white-space: normal; 
+    word-wrap: break-word;
+    font-size: 20px;
+  }
+  .text-component h1{
+    font-size: 50px;
+  }
+  
+  .text-component h2{
+    font-size: 30px;
+  }
+
+  .half-screen-div {
+    width: 50%; 
+    background-color: skyblue; 
+    color: black;
+    float: left;
+    padding: 20px;
+  }
+  
+  .half-screen-div p{
+    padding: 10px;
+  }
