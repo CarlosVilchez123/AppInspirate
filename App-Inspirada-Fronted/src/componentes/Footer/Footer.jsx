@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import './Footer.css'
+import './styleFooter.css'
 
 const CustomBottomNavigation = styled(BottomNavigation)(`
   background: linear-gradient(to bottom, #edcbf6, #cf7be7);
