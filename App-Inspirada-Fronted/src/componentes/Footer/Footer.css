@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    background-color: #edcbf6;
+}
+  
+.footer-columns {
+    display: flex;
+}
+  
+.footer-column {
+    flex: 1;
+    background-color: #edcbf6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row {
+    border: 1px solid #ccc;
+    background-color: #edcbf6;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .footer p{
+    line-height: 1px;
+ }
+
+ .footer h3{
+    line-height: 1.2px;
+ }
+
+  
+  
+  
+  
+  
