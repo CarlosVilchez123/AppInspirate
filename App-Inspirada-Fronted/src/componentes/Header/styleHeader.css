@@ -1,0 +1,10 @@
+.logo{
+    padding: 4px;
+    width: 200px;
+    height: auto;
+  }
+  
+  .nav-link:hover {
+    color: rgb(214, 119, 214);
+  
+  }
