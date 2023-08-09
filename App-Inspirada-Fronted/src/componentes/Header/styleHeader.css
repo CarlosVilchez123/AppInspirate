@@ -1,9 +1,12 @@
-.brand-center {justify-content: "center"}
-
-
 .logo{
+  padding: 4px;
   width: 200px;
-  height: 53px;
+  height: auto;
+}
+
+.nav-link:hover {
+  color: rgb(214, 119, 214);
+
 }
 
 
