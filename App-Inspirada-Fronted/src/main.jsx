@@ -9,19 +9,12 @@ import { ImagesCarousel } from './componentes/Carrusel/ImagesCarousel'
 import { MenuInferior } from './componentes/Menus/MenuInferior'
 import { Welcome } from './componentes/Welcome/Welcome'
 
-import './index.css'
+import { Footer } from './componentes/Footer/Footer'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Menu />
-    <MenuInferior />
-    <ImagesCarousel images={images} />
-    <Welcome 
-      title="Bienvenido a Inspirate UNI"
-      subtitle="¿Quines somos?"
-      description="Somos una Asociacion estudiantil formada en la Universidad nacional de Ingenieria
-                    dedicada a la orientacion vocacional en jovenes estudiantiles de colegio y academias"
-    />
+    <Footer />
   </React.StrictMode>,
 )
