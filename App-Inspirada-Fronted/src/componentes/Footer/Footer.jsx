@@ -22,24 +22,35 @@ export const Footer = () => {
             <p>Teléfono: +51 987 654 321</p>
             <p>Email: inspirateuni@uni.edu.pe </p>
         </div>
+
         <div className="footer-column">
             <p>Políticas de privacidad</p>
             <p>Código de ética</p>
             <p>Miembros de directorio</p>
         </div>
+
       </div>
       <div className='footer-row'>
         <div className="footer-icons">
           <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
             <div className='footer-icons'>
-              <CustomBottomNavigation >
-                <BottomNavigationAction label="Instagram" value="instagram" icon={<InstagramIcon />} />
-                <BottomNavigationAction label="Facebook" value="facebook" icon={<FacebookIcon />} />
-                <BottomNavigationAction label="LinkedIn" value="linkedin" icon={<LinkedInIcon />} />
-              </CustomBottomNavigation>
+                <CustomBottomNavigation>
+                <a href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
+                  <BottomNavigationAction  label="Instagram" icon={<InstagramIcon />} />
+                </a>
+
+                <a href="https://www.facebook.com/groups/1183296551739414" target="_blank" rel="noopener noreferrer">
+                  <BottomNavigationAction  label="Faceboock" icon={<FacebookIcon />} />
+                </a>
+
+                <a href="no hay link ._." target="_blank" rel="noopener noreferrer">
+                  <BottomNavigationAction  label="LinkedIn" icon={<LinkedInIcon />} />
+                </a>
+                </CustomBottomNavigation>
+
             </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

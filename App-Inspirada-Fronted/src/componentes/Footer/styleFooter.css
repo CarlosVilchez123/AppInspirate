@@ -5,11 +5,11 @@
     text-align: center;
     background-color: #edcbf6;
 }
-  
+
 .footer-columns {
     display: flex;
 }
-  
+
 .footer-column {
     flex: 1;
     background-color: #edcbf6;
@@ -34,9 +34,3 @@
  .footer h3{
     line-height: 1.2px;
  }
-
-  
-  
-  
-  
-  
