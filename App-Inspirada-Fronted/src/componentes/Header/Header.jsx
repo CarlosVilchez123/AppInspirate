@@ -15,18 +15,9 @@ export const Header = () => {
               <Nav.Link className="px-3" href="#login">Únete</Nav.Link>
             </Nav>
             <Navbar.Brand className="mx-auto" href="#home">
-              <img className="logo" src='https://drive.google.com/uc?export=view?&id=1vJATMpE1U7YDkzA5bRBG0f8hwkktUrQB' alt="Logo" />
+              <img className="logo" src='https://drive.google.com/uc?export=view?&id=1vJATMpE1U7YDkzA5bRBG0f8hwkktUrQB' alt="Logo"/>
             </Navbar.Brand>
-            <Form className="ml-auto">
-              <Row className="align-items-center px-3">
-                <Col xs="auto">
-                  <FormControl type="text" placeholder="Buscar" />
-                </Col>
-                <Col xs="auto" >
-                  <Button variant="outline-success">Buscar</Button>
-                </Col>
-              </Row>
-            </Form>
+            
         </Navbar.Collapse>
       </Navbar>
     </Container>

@@ -12,15 +12,13 @@ export const NavBarSuperior = () => {
           <Nav.Link href="/home">Inicio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">OVPGS</Nav.Link>
+          <Nav.Link eventKey="/ovpgs" href='/ovpgs'>OVPGS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">IGIrl</Nav.Link>
+          <Nav.Link eventKey="disabled" disabled>IGIrl</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Open Day
-          </Nav.Link>
+          <Nav.Link eventKey="disabled" disabled>Open Day</Nav.Link>
         </Nav.Item>
       </Nav>
     </Container>

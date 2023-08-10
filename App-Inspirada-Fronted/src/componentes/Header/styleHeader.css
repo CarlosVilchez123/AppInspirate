@@ -1,7 +1,7 @@
 .logo{
-    padding: 4px;
     width: 200px;
     height: auto;
+    margin-left: -200px;
   }
   
   .nav-link:hover {

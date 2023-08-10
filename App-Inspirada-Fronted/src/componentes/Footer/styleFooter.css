@@ -19,18 +19,21 @@
     align-items: center;
 }
 
-.footer-row {
-    border: 1px solid #ccc;
-    background-color: #edcbf6;
-    justify-content: center;
-    align-items: center;
+.row-wsp{
+    margin-left: -50px;
+}
+.wsp-logo {
+    width: 24px;
+    height: 24px;
+    margin-top: -13px;
+}
+.number{
+    width: 300px;
+    margin-left: -83px;
+}
+.footer h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
 
- }
 
- .footer p{
-    line-height: 1px;
- }
-
- .footer h3{
-    line-height: 1.2px;
- }
