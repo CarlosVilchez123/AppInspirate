@@ -1,5 +1,11 @@
+.menu-nav .nav-link:hover {
+    color: rgb(7, 136, 65);
+  
+  }
 
-.active-tab {
-    background-color: rgb(169, 202, 245);
-}
+.menu-nav .nav-link.active {
+    background-color: rgb(245, 178, 139);
+  
+  }
+
 

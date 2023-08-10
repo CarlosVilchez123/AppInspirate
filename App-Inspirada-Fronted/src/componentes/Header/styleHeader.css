@@ -4,7 +4,7 @@
     margin-left: -200px;
   }
   
-  .nav-link:hover {
+  .header-nav .nav-link:hover {
     color: rgb(214, 119, 214);
   
   }

@@ -1,21 +1,22 @@
 import React, {  useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Outlet, Link, useParams, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './styleNavBarSuperior.css'
 
+
 export const NavBarSuperior = () => {
 
-  const [activeKey, setActiveKey] = useState('home');
-
+  // Outlet -> Se utiliza para decirle al componente padre donde debe renderizar a sus componentes hijos.
+  
   return (
     <Container>
-      <Nav fill variant="tabs" activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>
+      <Nav className="menu-nav" fill variant="tabs" defaultActiveKey="home">
         <Nav.Item>
-          <Nav.Link className={activeKey === 'home' ? 'active-tab' : ''} eventKey="home" href="/home">Inicio</Nav.Link>
+          <Nav.Link as={Link} eventKey="home" to={"/home/inicio"}>Inicio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className={activeKey === 'ovpgs' ? 'active-tab' : ''} eventKey="ovpgs" href='/ovpgs'>OVPGS</Nav.Link>
+          <Nav.Link as={Link} eventKey="ovpgs" to={"/home/ovpgs"}>OVPGS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="igirl" disabled>IGirl</Nav.Link>
@@ -24,6 +25,7 @@ export const NavBarSuperior = () => {
           <Nav.Link eventKey="openday" disabled>Open Day</Nav.Link>
         </Nav.Item>
       </Nav>
+      <Outlet/>
     </Container>
   );
 };
