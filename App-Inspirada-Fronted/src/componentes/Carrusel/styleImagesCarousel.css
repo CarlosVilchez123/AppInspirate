@@ -1,21 +1,17 @@
 .custom-carousel {
-  position: relative;
-  max-width: 900px;
-  max-height: 500px;
-  margin: 30px auto;
-  padding: 10px;
-}  
- 
-.custom-carousel img {
-  max-width: 900px;
-  max-height: 500px;
-  object-fit: cover;
-  object-position: center;
-}
+    position: relative;
+    max-width: 900px;
+    max-height: 500px;
+    margin: 30px auto;
+    padding: 10px;
+  }
   
-.custom-carousel p {
-margin-top: 10px;
-}
+  .custom-carousel img {
+    max-width: 900px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
   
 .custom-carousel .text-overlay {
   position: absolute;
