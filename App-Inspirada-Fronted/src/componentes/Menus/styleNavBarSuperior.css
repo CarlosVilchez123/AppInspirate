@@ -1,16 +1,9 @@
-.nav .nav-link:nth-child(1).active {
-    background-color: rgb(255, 187, 0);
-  }
+.menu-nav .nav-link:hover {
+  color: rgb(7, 136, 65);
 
+}
 
-  .nav .nav-link:nth-child(2).active {
-    background-color: rgb(61, 139, 241);
-  }
+.menu-nav .nav-link.active {
+  background-color: rgb(245, 178, 139);
 
-  .nav .nav-link:nth-child(3).active {
-    background-color: rgb(227, 104, 243);
-  }
-
-  .nav .nav-link:nth-child(4).active {
-    background-color: rgb(148, 243, 104);
-  }
+}
