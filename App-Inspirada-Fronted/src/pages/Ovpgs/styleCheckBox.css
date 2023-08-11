@@ -1,7 +1,7 @@
 .container-check{
     display: flex;
     align-items: center;
-    width: 600px;
+    width: 400px;
     height: 2em;
     margin-top: 30px;
 }
@@ -9,7 +9,6 @@
 .input-checkbox{
     display: none;
 }
-
 .span-checkbox {
     display: inline-block;
     margin-bottom: 1px;
@@ -45,7 +44,14 @@
     background: black;
 }
 
+
+
 .p-check{
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.container-carreras{
+    font-size: 13px;
+    margin-left: 70px;
 }
