@@ -13,7 +13,7 @@
 .span-checkbox {
     display: inline-block;
     margin-bottom: 1px;
-    margin-left: 20px;
+    margin-left: -45px;
     position: relative;
     width: 2em;
     height: 2em;
@@ -48,4 +48,10 @@
 .p-check{
     margin-top: 10px;
     margin-left: 10px;
+    font-weight: bold;
+}
+
+.container-carreras{
+    font-size: 15px;
+    margin-left: 70px;
 }

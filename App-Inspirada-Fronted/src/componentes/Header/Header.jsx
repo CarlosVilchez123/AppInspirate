@@ -11,8 +11,7 @@ export const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link className="px-3" href="#login">Iniciar sesión</Nav.Link>
-              <Nav.Link className="px-3" href="#unete">Únete</Nav.Link>
+              <Nav.Link className="px-3" href="#unete">Intranet Inspirada</Nav.Link>
             </Nav>
             <Navbar.Brand className="mx-auto" href="#home">
               <img className="logo" src='https://drive.google.com/uc?export=view?&id=1vJATMpE1U7YDkzA5bRBG0f8hwkktUrQB' alt="Logo"/>
