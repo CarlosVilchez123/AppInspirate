@@ -22,6 +22,7 @@ export const Home = () => {
     <div className="home">
       <ImagesCarousel images={images} />
       <Welcome/>
+      <Footer></Footer>
     </div>
     </TabContent>
   );
