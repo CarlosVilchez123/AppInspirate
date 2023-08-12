@@ -2,6 +2,7 @@ import React from 'react'
 
 import { styled } from '@mui/material/styles';
 import { BottomNavigation, BottomNavigationAction, Collapse } from '@mui/material';
+import { IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -14,6 +15,10 @@ const CustomBottomNavigation = styled(BottomNavigation)(`
   background: #edcbf6;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `);
+
+const StyledIconButton = styled(IconButton)(({ theme }) => ({
+  margin: theme.spacing(3), 
+}));
 
 export const Footer = () => {
   return (
@@ -44,19 +49,17 @@ export const Footer = () => {
       <div className='footer-row'>
           <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
             <div className='footer-icons'>
-                <CustomBottomNavigation>
-                <a href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
-                  <BottomNavigationAction  label="Instagram" icon={<InstagramIcon />} />
-                </a>
+                  <StyledIconButton href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
+                    <InstagramIcon />
+                  </StyledIconButton>
 
-                <a href="https://www.facebook.com/groups/1183296551739414" target="_blank" rel="noopener noreferrer">
-                  <BottomNavigationAction  label="Faceboock" icon={<FacebookIcon />} />
-                </a>
+                  <StyledIconButton href="https://www.facebook.com/groups/1183296551739414" target="_blank" rel="noopener noreferrer">
+                    <FacebookIcon />
+                  </StyledIconButton>
 
-                <a href="" target="_blank" noopener= "noreferrer">
-                  <BottomNavigationAction  label="LinkedIn" icon={<LinkedInIcon />} />
-                </a>
-                </CustomBottomNavigation>
+                  <StyledIconButton href="https://www.linkedin.com/company/inspirate-uni/about/" target="_blank" noopener= "noreferrer">
+                    <LinkedInIcon />
+                  </StyledIconButton>
             
             </div>
       </div>
