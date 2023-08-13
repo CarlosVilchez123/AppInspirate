@@ -61,8 +61,6 @@ export const Ovpgs = () => {
 
   return (
     <>
-        <NavBarSuperior/>
-
         <h1>Carreras</h1>
         {arreglo.map((items, index) => (
         <React.Fragment key={items.id}>

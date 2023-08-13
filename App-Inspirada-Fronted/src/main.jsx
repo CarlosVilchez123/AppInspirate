@@ -7,6 +7,7 @@ import { Default } from "./pages/Default/Default";
 import { Header } from "./componentes/Header/Header";
 import { Footer } from "./componentes/Footer/Footer";
 import { Ovpgs } from './pages/Ovpgs/Ovpgs';
+import { Activities } from './pages/Activities/Activities';
 import { NavBarSuperior} from './componentes/Menus/NavBarSuperior'
 
 const router = createBrowserRouter([
@@ -24,8 +25,15 @@ const router = createBrowserRouter([
             element : <Home />
           },
           {
-            path:"/home/ovpgs",
-            element : <Ovpgs />
+            path:"/home/actividades",
+            element : <Activities/>,
+            
+            children: [
+              {
+                path:"/home/actividades/ovpgs",
+                element : <Ovpgs/>,    
+              }
+            ]
           }
         ]
       }
