@@ -19,7 +19,7 @@ export const NavBarSuperior = () => {
           <Nav.Link as={Link} eventKey="ovpgs" to={"/home/ovpgs"}>OVPGS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="igirl" disabled>IGirl</Nav.Link>
+          <Nav.Link as={Link} eventKey="igirl" to={"/home/igirl"}>IGirl</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="openday" disabled>Open Day</Nav.Link>
