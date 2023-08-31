@@ -8,6 +8,8 @@ import { Header } from "./componentes/Header/Header";
 import { Footer } from "./componentes/Footer/Footer";
 import { Ovpgs } from './pages/Ovpgs/Ovpgs';
 import { NavBarSuperior} from './componentes/Menus/NavBarSuperior'
+import { Eventos } from './pages/Eventos/Eventos';
+import { Igirl } from './pages/Igirl/Igirl';
 
 const router = createBrowserRouter([
       {
@@ -24,8 +26,12 @@ const router = createBrowserRouter([
             element : <Home />
           },
           {
-            path:"/home/ovpgs",
-            element : <Ovpgs />
+            path:"/home/eventos",
+            element : <Eventos />
+          },
+          {
+            path:"/home/igirl",
+            element : <Igirl/>
           }
         ]
       }

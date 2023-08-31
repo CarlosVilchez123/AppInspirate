@@ -1,9 +1,8 @@
 .menu-nav .nav-link:hover {
-  color: rgb(7, 136, 65);
+  color: rgb(249, 249, 249);
 
 }
 
 .menu-nav .nav-link.active {
-  background-color: rgb(245, 178, 139);
-
+  background-color: rgb(19, 25, 150);
 }

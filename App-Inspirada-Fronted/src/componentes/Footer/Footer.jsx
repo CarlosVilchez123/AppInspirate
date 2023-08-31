@@ -49,7 +49,7 @@ export const Footer = () => {
                   <BottomNavigationAction  label="Instagram" icon={<InstagramIcon />} />
                 </a>
 
-                <a href="https://www.facebook.com/groups/1183296551739414" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/inspirateuni" target="_blank" rel="noopener noreferrer">
                   <BottomNavigationAction  label="Faceboock" icon={<FacebookIcon />} />
                 </a>
 
