@@ -10,7 +10,7 @@ import { Ovpgs } from './pages/Ovpgs/Ovpgs';
 import { NavBarSuperior} from './componentes/Menus/NavBarSuperior'
 import { Eventos } from './pages/Eventos/Eventos';
 import { Igirl } from './pages/Igirl/Igirl';
-
+import './index.css'
 const router = createBrowserRouter([
       {
         path: "/",

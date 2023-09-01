@@ -11,7 +11,7 @@ import './styleFooter.css'
 import { Link, NavLink } from 'react-router-dom';
 import { Row, Col} from 'react-bootstrap'
 const CustomBottomNavigation = styled(BottomNavigation)(`
-  background: #edcbf6;
+  background: rgb(42, 80, 157);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `);
 
