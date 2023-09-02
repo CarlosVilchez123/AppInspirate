@@ -7,9 +7,10 @@ import { Default } from "./pages/Default/Default";
 import { Header } from "./componentes/Header/Header";
 import { Footer } from "./componentes/Footer/Footer";
 import { Ovpgs } from './pages/Ovpgs/Ovpgs';
-import { Activities } from './pages/Activities/Activities';
 import { NavBarSuperior} from './componentes/Menus/NavBarSuperior'
-
+import { Eventos } from './pages/Eventos/Eventos';
+import { Igirl } from './pages/Igirl/Igirl';
+import './index.css'
 const router = createBrowserRouter([
       {
         path: "/",
@@ -25,15 +26,12 @@ const router = createBrowserRouter([
             element : <Home />
           },
           {
-            path:"/home/actividades",
-            element : <Activities/>,
-            
-            children: [
-              {
-                path:"/home/actividades/ovpgs",
-                element : <Ovpgs/>,    
-              }
-            ]
+            path:"/home/eventos",
+            element : <Eventos />
+          },
+          {
+            path:"/home/igirl",
+            element : <Igirl/>
           }
         ]
       }

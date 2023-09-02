@@ -6,4 +6,3 @@ export const Default = () => {
     <Navigate to="/home/inicio" replace={true} />
     )
 };
-
