@@ -6,14 +6,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import { IconButton } from '@mui/material';
 import './styleFooter.css'
 import { Link, NavLink } from 'react-router-dom';
 import { Row, Col} from 'react-bootstrap'
-const CustomBottomNavigation = styled(BottomNavigation)(`
-  background: rgb(42, 80, 157);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-`);
 
 const StyledIconButton = styled(IconButton)(({ theme }) => ({
   margin: theme.spacing(3), 
@@ -48,7 +44,7 @@ export const Footer = () => {
       <div className='footer-row'>
           <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
             <div className='footer-icons'>
-                  <StyledIconButton href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
+            <StyledIconButton href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
                     <InstagramIcon />
                   </StyledIconButton>
 
@@ -58,15 +54,7 @@ export const Footer = () => {
 
                   <StyledIconButton href="https://www.linkedin.com/company/inspirate-uni/about/" target="_blank" noopener= "noreferrer">
                     <LinkedInIcon />
-                  </StyledIconButton>
-                <a href="https://www.facebook.com/inspirateuni" target="_blank" rel="noopener noreferrer">
-                  <BottomNavigationAction  label="Faceboock" icon={<FacebookIcon />} />
-                </a>
-
-                <a href="" target="_blank" noopener= "noreferrer">
-                  <BottomNavigationAction  label="LinkedIn" icon={<LinkedInIcon />} />
-                </a>
-            
+              </StyledIconButton>
             </div>
       </div>
     </div>
