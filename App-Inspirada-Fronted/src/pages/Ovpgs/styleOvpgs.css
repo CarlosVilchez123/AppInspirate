@@ -1,0 +1,20 @@
+.typesOvpgs-container{
+    display: flex;
+    font-size: 20px;
+    margin-left: -70px;
+    
+}
+.typesOvpgs-container > * {
+    margin-right: -400px; /* Ajusta el valor según tus preferencias */
+  }
+.typesOvpgs-container > *:last-child {
+    margin-right: 0;
+}
+
+.facus{
+  font-size: 18px;
+}
+.carreras{
+  margin-left: 50px;
+  font-size: 12px;
+}
