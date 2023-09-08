@@ -6,8 +6,17 @@ import { ImagesCarousel } from '../../componentes/Carrusel/ImagesCarousel'
 import { Carousel } from 'react-bootstrap';
 import './styleOvpgs.css'
 import { NavItem } from 'react-bootstrap'
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
 
 export const InscripcionOvpgs = () => {
+
+  const TabContent = styled(motion.div)`
+  width: 100%;
+  `;
+
+
   let OvpgUser=''
   let carrera=''
   let embajador=''
@@ -60,7 +69,10 @@ export const InscripcionOvpgs = () => {
   }, [isOvpgUser]);
 
   return (
-    <>
+    <TabContent
+    initial={{ opacity: '0%' }}
+    animate={{ opacity: '100%'}}
+    transition={{ duration: '1.0' }}>
       <div className='typesOvpgs-container'>
         {isTypeOpvg.map((tipoOvpg,index) => (
           <CheckBoxIuni 
@@ -104,7 +116,7 @@ export const InscripcionOvpgs = () => {
 
       </div>
       
-    </>
+    </TabContent>
   )
 }
 
