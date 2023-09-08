@@ -1,8 +1,5 @@
 import React from 'react'
 import './Eventos.css'
-import { Logos } from './Logos'
-import ejemplo from '../Eventos/ejemplo.png'
-import './Eventos.css'
 import { eventosData } from './EventosData'
 import { Link } from 'react-router-dom';
 

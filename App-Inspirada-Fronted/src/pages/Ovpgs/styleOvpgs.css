@@ -1,11 +1,11 @@
+
 .typesOvpgs-container{
     display: flex;
     font-size: 20px;
-    margin-left: -70px;
-    
+    margin-left: 100px;
 }
 .typesOvpgs-container > * {
-    margin-right: -400px; /* Ajusta el valor según tus preferencias */
+    margin-right: -400px;
   }
 .typesOvpgs-container > *:last-child {
     margin-right: 0;
@@ -13,6 +13,7 @@
 
 .facus{
   font-size: 18px;
+  margin-left: 100px;
 }
 .carreras{
   margin-left: 50px;
