@@ -3,28 +3,22 @@ import './Eventos.css'
 import { Logos } from './Logos'
 import ejemplo from '../Eventos/ejemplo.png'
 import './Eventos.css'
-export const Eventos = () => {
-  const logos = [
-    {src:'https://drive.google.com/uc?export=view?&id=1CcAlzM5RGxmw8mjg9lckW-NiOntnYyL2', descripcion: "ovpgs"},
-    {src:'https://drive.google.com/uc?export=view?&id=1CcAlzM5RGxmw8mjg9lckW-NiOntnYyL2', descripcion: "Ponencias"},
-    {src:'https://drive.google.com/uc?export=view?&id=1CcAlzM5RGxmw8mjg9lckW-NiOntnYyL2', descripcion: "Visitas Guiadas"}
-  ]
+import { eventosData } from './EventosData'
+import { Link } from 'react-router-dom';
 
+export const Eventos = () => {  
   return (
-
-    <div className='container-container'>
-      <div className='container-eventos'>
-          <div className='container-main'>
-              <h1>Más sobre nosotros</h1>
-              <p>Mucho texto aqui abajo</p>
-          </div>
-
-          <div className="gallery">
-            {logos.map((logo, index) => (
-              <Logos key={index} src={logo.src} descripcion={logo.descripcion} />
-            ))}
-          </div>
+    <div className="eventos">
+    {eventosData.map((item) => (
+      <div key={eventosData.id} className="evento">
+        <Link to={`/home/${encodeURIComponent(item.id)}`}>
+        <h2>{item.titulo}</h2>
+        <img src={item.portada} alt={item.titulo} />
+        <p>{item.desc}</p>
+        </Link>
       </div>
-    </div>
+    ))}
+  </div>
+
   )
 }

@@ -1,15 +1,18 @@
 const images = [
     {
       url: 'https://images8.alphacoders.com/130/1302284.png',
-      description: 'Lady 1',
+      encabezado: 'Lady 1',
+      desc: 'La serie de Ladybug, es protagonizada por dos superhéroes: Ladybug y Chat Noir.',
     },
     {
       url: 'https://wallpaperboat.com/wp-content/uploads/2020/10/08/56249/miraculous-ladybug-01.jpg',
-      description: 'Lady 2',
+      encabezado: 'Lady 2',
+      desc: 'La serie de Ladybug, es protagonizada por dos superhéroes: Ladybug y Chat Noir.',
     },
     {
-      url: 'https://w0.peakpx.com/wallpaper/495/568/HD-wallpaper-miraculous-new-amoled-samsung-cartoon-best-ladybug-iphone.jpg',
-      description: 'Lady 3',
+      url: 'https://m.media-amazon.com/images/M/MV5BM2IwNzJlNTQtMzgzMi00Mjc1LTgxMjctM2U3MDI1ZTIxYmRjXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg',
+      encabezado: 'Lady 3',
+      desc: 'La serie de Ladybug, es protagonizada por dos superhéroes: Ladybug y Chat Noir.',
     }
   ];
 

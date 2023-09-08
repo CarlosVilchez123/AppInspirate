@@ -1,33 +1,32 @@
-.custom-carousel {
-    position: relative;
-    max-width: 900px;
-    max-height: 500px;
-    margin: 30px auto;
-    padding: 10px;
-  }
+.carousel {
+  position: relative;
+  max-width: 1300px;
+  height: 700px;
+  margin: 30px auto;
+}
   
-  .custom-carousel img {
-    max-width: 900px;
-    max-height: 500px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-.custom-carousel .text-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.image {
+  max-width: 1300px;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
+.caption h3 {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
 }
-  
-.custom-carousel .carousel .thumbs-wrapper {
-  display: none;
+
+/* Clase del mismo Bootstrap */
+.carousel-caption {
+  right: 0% !important; 
+  left: 0% !important;
+  bottom: 0rem !important;
 }
-  
-.custom-carousel .carousel-status {
- display: none;
-}
-  
