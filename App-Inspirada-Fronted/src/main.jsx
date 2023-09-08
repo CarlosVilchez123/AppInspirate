@@ -6,11 +6,13 @@ import { Home } from "./pages/Home/Home";
 import { Default } from "./pages/Default/Default";
 import { Header } from "./componentes/Header/Header";
 import { Footer } from "./componentes/Footer/Footer";
-import { Ovpgs } from './pages/Ovpgs/Ovpgs';
+
 import { NavBarSuperior} from './componentes/Menus/NavBarSuperior'
 import { Eventos } from './pages/Eventos/Eventos';
 import { Igirl } from './pages/Igirl/Igirl';
 import './index.css'
+import { OvpgsMain } from './pages/Ovpgs/OvpgsMain';
+import { InscripcionOvpgs } from './pages/Ovpgs/InscripcionOvpgs';
 const router = createBrowserRouter([
       {
         path: "/",
@@ -31,7 +33,11 @@ const router = createBrowserRouter([
           },
           {
             path:"/home/ovpgs",
-            element : <Ovpgs/>,
+            element : <OvpgsMain/>,
+          },
+          {
+            path:"/home/ovpgs-inscripcion",
+            element : <InscripcionOvpgs/>,
           },
           {
             path:"/home/igirl",

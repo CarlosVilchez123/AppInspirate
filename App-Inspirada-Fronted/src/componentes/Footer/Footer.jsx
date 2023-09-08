@@ -44,11 +44,11 @@ export const Footer = () => {
       <div className='footer-row'>
           <h3>SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
             <div className='footer-icons'>
-            <StyledIconButton href="https://www.instagram.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
+            <StyledIconButton href="https://www.instagram.com/inspirateuni/?hl=es" target="_blank" rel="noopener noreferrer">
                     <InstagramIcon />
                   </StyledIconButton>
 
-                  <StyledIconButton href="https://www.facebook.com/groups/1183296551739414" target="_blank" rel="noopener noreferrer">
+                  <StyledIconButton href="https://www.facebook.com/inspirateuni/" target="_blank" rel="noopener noreferrer">
                     <FacebookIcon />
                   </StyledIconButton>
 

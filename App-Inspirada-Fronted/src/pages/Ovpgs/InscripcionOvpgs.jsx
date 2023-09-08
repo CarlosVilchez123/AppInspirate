@@ -1,10 +1,13 @@
 import React, { useState, useEffect} from 'react'
 import listaFacultades from './Listas/ListaFacultades'
 import CheckBoxIuni from '../../Personalizados/CheckBoxIuni'
+import images from './ImgEmbajadores/Data';
+import { ImagesCarousel } from '../../componentes/Carrusel/ImagesCarousel'
+import { Carousel } from 'react-bootstrap';
 import './styleOvpgs.css'
 import { NavItem } from 'react-bootstrap'
 
-export const Ovpgs = () => {
+export const InscripcionOvpgs = () => {
   let OvpgUser=''
   let carrera=''
   let embajador=''
@@ -20,6 +23,8 @@ export const Ovpgs = () => {
   let [isCheckTypeOvpg, setCheckTypeOvpg] = useState(CheckTypeOvpg)
   //hook para los usarios de Ovpgs
   let [isOvpgUser, setOvpgUser] = useState(OvpgUser)
+  //
+  let [isFAcu, setFacu] = useState("")
 
   const handleFacultades = (event,{index}) => {
     const updateArreglo = [...arrayFacultades]
@@ -32,6 +37,7 @@ export const Ovpgs = () => {
       updateArreglo[index].checked=false;
     }
     setArrayFacultades(updateArreglo)
+    setFacu(updateArreglo[index].nombre)
   }
 
   const handleTypesOvpgs = (event,{index}) =>{
@@ -67,30 +73,37 @@ export const Ovpgs = () => {
         ))}
       </div>
 
-      <div>
-        {arrayFacultades.map((facus, index) =>(
-          <div key={index} className='facus'>
-            <CheckBoxIuni 
-              label={facus.nombre} 
-              checked={facus.checked} 
-              onChange={(event) => {handleFacultades(event,{index})} }
-            />
-            {facus.checked && 
-              facus.carreras.lista.map(
-                (carrera,indexSon) =>(
-                  <div key={indexSon} className='carreras'>
-                    <CheckBoxIuni 
-                      label={carrera}
-                    />
-                  </div>
-                )
-              )
-            }
+      <div className='container-bottom'>
+          <div>
+            {arrayFacultades.map((facus, index) =>(
+              <div key={index} className='facus'>
+                <CheckBoxIuni 
+                  label={facus.nombre} 
+                  checked={facus.checked} 
+                  onChange={(event) => {handleFacultades(event,{index})} }
+                />
+                {facus.checked && 
+                  facus.carreras.lista.map(
+                    (carrera,indexSon) =>(
+                      <div key={indexSon} className='carreras'>
+                        <CheckBoxIuni 
+                          label={carrera}
+                        />
+                      </div>
+                    )
+                  )
+                }
+              </div>
+            )
+            )}
           </div>
-            
-        )
-        )}
+          <div className='container-right'>
+            <h1>Embajadores de la {isFAcu}</h1>
+            <ImagesCarousel images={images} />
+          </div>
+
       </div>
+      
     </>
   )
 }
