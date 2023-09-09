@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    position: relative;
+    position: absolute;
     margin-top: auto;
     text-align: center;
     background-color: rgb(42, 80, 157);
@@ -11,12 +11,14 @@
 }
   
 .footer-column {
+    margin-top: 10px;
+    margin-bottom: 30px;
     flex: 1;
-    background-color: rgb(42, 80, 157);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 8px;
 }
 
 .row-wsp{
@@ -32,12 +34,13 @@
     margin-left: -83px;
 }
 .footer h3{
-    margin-top: 20px;
     font-size: 20px;
     color:whitesmoke;
 }
 
 
-.footer p{
+p{
     color:azure;
+    margin-top: 0;
+    margin-bottom: 0;
 }

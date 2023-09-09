@@ -20,13 +20,19 @@ export const Eventos = () => {
         <p>Como organizacion estudiantil dedicada a las orientaciones vocacionales... (mucho texto)</p>
         <div className="eventos">
         {eventosData.map((item) => (
-          <div key={eventosData.id} className="evento">
             <Link to={`/home/${encodeURIComponent(item.id)}`}>
             <h2>{item.titulo}</h2>
-            <img src={item.portada} alt={item.titulo} />
-            <p>{item.desc}</p>
+              <div key={eventosData.id} className="card-content">
+                <div className="card-content-inner">
+                  <div className="front">
+                    <img src={item.portada} alt={item.titulo} />
+                  </div>
+                  <div className="back">
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              </div>
             </Link>
-          </div>
         ))}
       </div>
     </TabContent>

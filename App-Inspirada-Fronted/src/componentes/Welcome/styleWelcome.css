@@ -20,3 +20,7 @@
 .card-text {
     font-size: 20px;
 }
+
+p.card-text {
+    color:black
+}
