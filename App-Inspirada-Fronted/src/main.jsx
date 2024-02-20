@@ -52,5 +52,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header/>
     <RouterProvider router={router} />
     <Footer/>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

@@ -16,7 +16,7 @@ export const Eventos = () => {
       initial={{ opacity: '0%' }}
       animate={{ opacity: '100%'}}
       transition={{ duration: '1.0' }}>
-        <h1>¿Que actividades esperar de nostros?</h1>
+        <h1>¿Que actividades esperar de nosotros?</h1>
         <p>Como organizacion estudiantil dedicada a las orientaciones vocacionales... (mucho texto)</p>
         <div className="eventos">
         {eventosData.map((item) => (
